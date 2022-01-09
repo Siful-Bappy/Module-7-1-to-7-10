@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realstic bat hit on ball</title>
+    <style>
+        .field{
+            border: 2px solid maroon;
+        }
+        .bat{
+            height: 380px;
+            width: auto;
+            transition: transform .2s ease-in;
+        }
+        .field:hover .bat{
+            transform: rotate(-40deg);
+            transform-origin: top;
+        }
+        
+        .ball{
+            height: 34px;
+            width: 34px;
+            border: 1px solid black;
+            background-color: red;
+            border-radius: 17px;
+            position: relative;
+            left: 322px;
+            top: -200px;
+            transition: transform 5s ease-out 4;
+        }
+        .field:hover .ball{
+            transform: translate(100px, -100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
